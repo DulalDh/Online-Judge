@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+{
+int j,x,y;
+scanf("%d",&x);
+scanf("%d",&y);
+if(x<y)
+{
+for(j=x+1;j<y;j++)
+{
+if(j%5==2||j%5==3)
+printf("%d\n",j);
+}}
+if(x>y)
+{
+for(j=y+1;j<x;j++)
+{
+if(j%5==2||j%5==3)
+printf("%d\n",j);
+}}
+}

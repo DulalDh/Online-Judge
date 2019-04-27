@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+{
+int i,N[100],M[100],temp,count;
+for(i=0;i<100;i++)
+{
+scanf("%d",&N[i]);
+M[i]=N[i];
+}
+for(i=0;i<100;i++)
+{
+if(N[i]>N[i+1])
+N[i+1]=N[i];
+}
+for(i=0;i<100;i++)
+{
+    if(M[i]==N[99])
+    count=i;
+}
+printf("%d\n%d\n",N[99],count+1);
+}
